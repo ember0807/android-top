@@ -75,48 +75,42 @@
         android:layout_width="257dp"
         android:layout_height="36dp"
         android:layout_marginStart="147dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="47dp"
         android:background="#018685"
         android:gravity="center"
         android:text="@string/box_thtee"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/boxTwo"
-        app:layout_constraintTop_toBottomOf="@+id/BoxOne"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/BoxOne" />
 
     <TextView
         android:id="@+id/boxFour"
         android:layout_width="257dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="497dp"
         android:background="#95AAE2"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/box_four"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/boxTwo"
-        app:layout_constraintTop_toBottomOf="@+id/BoxThtee"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintTop_toBottomOf="@+id/BoxThtee" />
 
     <TextView
         android:id="@+id/boxFive"
+        android:layout_marginTop="10dp"
         android:layout_width="257dp"
         android:layout_height="36dp"
         android:layout_marginStart="147dp"
-        android:layout_marginBottom="420dp"
         android:background="#2A122A"
         android:gravity="center"
         android:text="@string/box_five"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/boxTwo"
-        app:layout_constraintTop_toBottomOf="@+id/boxFour"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintTop_toBottomOf="@+id/boxFour" />
 </androidx.constraintlayout.widget.ConstraintLayout>
