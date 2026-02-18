@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_box"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_players_name"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/playerOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/blue_border"
+            android:padding="12dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/blue"
+            android:drawableStart="@drawable/ic_xicon"
+            android:hint="@string/enter_player_one_name" />
+
+        <EditText
+            android:id="@+id/playerTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:background="@drawable/blue_border"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/blue"
+            android:drawableStart="@drawable/ic_oicon"
+            android:hint="@string/enter_player_two_name"  />
+        <CheckBox
+            android:id="@+id/vsComputerCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Играть против ПК"
+            android:textColor="@color/blue" />
+
+        <Spinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/difficulty_levels"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/startGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="20dp"
+            android:text="@string/start_game" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
